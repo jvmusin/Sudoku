@@ -44,13 +44,5 @@ public class Main {
             Files.write(Paths.get(fileName + ".solved.txt"), ans.getBytes());
 
         }
-
-        Files.list(Paths.get("")).filter(f -> f.toString().endsWith(".solved.txt")).forEach(f -> {
-            try {
-                Files.delete(f);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
     }
 }
