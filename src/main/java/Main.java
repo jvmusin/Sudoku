@@ -42,7 +42,6 @@ public class Main {
 
             String ans = new GsonBuilder().setPrettyPrinting().create().toJson(result);
             Files.write(Paths.get(fileName + ".solved.txt"), ans.getBytes());
-
         }
     }
 }
